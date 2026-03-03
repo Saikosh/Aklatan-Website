@@ -1,0 +1,106 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Parent Wrapper: Sets the overall background */
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a8bc94; /* Fallback green */
+    background-image: url('background-building.jpg'); 
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+/* Child 1: The Outer Card */
+.registration-card {
+    background-color: #f0f0f0; /* The light gray/white border frame */
+    background-image: url('login/library-shelf-bg.jpg');
+    background-size: cover;
+    padding: 20px;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Child 2: The Inner Glassmorphism Area */
+.form-container {
+    background: rgba(255, 255, 255, 0.75); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Creates the frosted glass effect */
+    padding: 30px 25px;
+    border-radius: 40px;
+    text-align: center;
+}
+
+/* Typography */
+.site-title {
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.main-heading {
+    font-size: 2.5rem;
+    color: #7ca96d;
+    text-shadow: 1px 1px 0 #000; /* Simple outline effect */
+    margin-bottom: 5px;
+}
+
+.sub-heading {
+    font-weight: bold;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+}
+
+/* Form Elements */
+.signup-form {
+    text-align: left;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+}
+
+.input-group input, 
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: white;
+    font-size: 1rem;
+}
+
+/* The Button */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #8db577;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #769a63;
+}
