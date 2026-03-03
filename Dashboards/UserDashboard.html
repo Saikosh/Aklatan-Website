@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UD-cipher | User Dashboard</title>
+  <link rel="stylesheet" href="UserDashboard.css" />
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <!-- ===================== SIDEBAR ===================== -->
+    <aside class="sidebar" id="sidebar">
+
+      <!-- Logo -->
+      <div class="sidebar-brand">
+        <div class="brand-logo-wrap">
+          <img src="logo.png" alt="UD-cipher Logo" class="brand-logo-full" />
+          <img src="logo-icon.png" alt="UD-cipher Icon" class="brand-logo-icon" />
+        </div>
+      </div>
+
+      <!-- Nav Links -->
+      <nav class="sidebar-nav">
+
+        <a href="#" class="nav-item active" data-tooltip="Feed">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7"/>
+              <rect x="14" y="3" width="7" height="7"/>
+              <rect x="3" y="14" width="7" height="7"/>
+              <rect x="14" y="14" width="7" height="7"/>
+            </svg>
+          </span>
+          <span class="nav-label">Feed</span>
+        </a>
+
+        <a href="#" class="nav-item" data-tooltip="Forums">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+          </span>
+          <span class="nav-label">Forums</span>
+        </a>
+
+        <a href="#" class="nav-item" data-tooltip="Messages">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"/>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+          </span>
+          <span class="nav-label">Messages</span>
+        </a>
+
+        <a href="#" class="nav-item" data-tooltip="My Readlist">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+            </svg>
+          </span>
+          <span class="nav-label">My Readlist</span>
+        </a>
+
+        <a href="#" class="nav-item" data-tooltip="Bookmarks">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+            </svg>
+          </span>
+          <span class="nav-label">Bookmarks</span>
+        </a>
+
+        <a href="#" class="nav-item" data-tooltip="Share a community">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19"/>
+              <line x1="5" y1="12" x2="19" y2="12"/>
+            </svg>
+          </span>
+          <span class="nav-label">Share a community</span>
+        </a>
+
+        <!-- POST Button -->
+        <div class="post-btn-wrap">
+          <button class="post-btn">POST</button>
+        </div>
+
+        <div class="nav-divider"></div>
+
+        <a href="#" class="nav-item" data-tooltip="More">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"/>
+              <line x1="3" y1="6" x2="21" y2="6"/>
+              <line x1="3" y1="18" x2="21" y2="18"/>
+            </svg>
+          </span>
+          <span class="nav-label">More</span>
+        </a>
+
+        <a href="#" class="nav-item nav-profile" data-tooltip="Profile">
+          <span class="nav-icon">
+            <img src="https://i.pravatar.cc/60?img=11" alt="Profile" class="profile-avatar-sm" />
+          </span>
+          <span class="nav-label">Profile</span>
+        </a>
+
+      </nav>
+    </aside>
+    <!-- =================== END SIDEBAR =================== -->
+
+
+    <!-- ===================== MAIN ===================== -->
+    <main class="main-content">
+
+      <!-- Fixed background layer -->
+      <div class="bg-image-layer"></div>
+
+      <!-- ===================== GREEN PANEL (fixed, scrollable content inside) ===================== -->
+      <div class="green-panel">
+
+        <!-- Topbar inside green panel -->
+        <div class="green-topbar">
+          <div class="search-bar">
+            <input type="text" placeholder="Search" />
+            <button class="search-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"/>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              </svg>
+            </button>
+          </div>
+          <button class="notif-btn" title="Notifications">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+              <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Scrollable feed content -->
+        <div class="feed-scroll">
+
+          <!-- Hero Banner -->
+          <div class="hero-banner">
+            <div class="hero-text">
+              <h2>Lorem ipsum dolor sit amet,<br/>consectetur adipiscing</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus aliquam velit ac mattis. Vestibulum scelerisque orci dui, eget dignissim tellus interdum non.</p>
+              <div class="hero-btns">
+                <button class="btn-upgrade">Upgrade</button>
+                <button class="btn-learn">Learn More</button>
+              </div>
+            </div>
+            <div class="hero-img-overlay"></div>
+          </div>
+
+          <!-- Category Filter -->
+          <div class="category-row">
+            <span class="category-label">Category</span>
+            <div class="category-tags">
+              <button class="tag active">Others</button>
+              <button class="tag">CEAT</button>
+              <button class="tag">CLAC</button>
+              <button class="tag">COS</button>
+              <button class="tag">CoED</button>
+              <button class="tag">CCJE</button>
+            </div>
+          </div>
+
+          <!-- Posts Grid -->
+          <div class="posts-grid">
+            <div class="post-card">
+              <img src="https://picsum.photos/seed/a1/300/200" alt="post" />
+              <div class="post-likes">200 <span>♡</span></div>
+              <div class="post-caption"><strong>Sample</strong><br/>Sample</div>
+            </div>
+            <div class="post-card">
+              <img src="https://picsum.photos/seed/b2/300/200" alt="post" />
+              <div class="post-likes">200 <span>♡</span></div>
+            </div>
+            <div class="post-card">
+              <img src="https://picsum.photos/seed/c3/300/200" alt="post" />
+              <div class="post-likes">200 <span>♡</span></div>
+            </div>
+            <div class="post-card">
+              <img src="https://picsum.photos/seed/d4/300/200" alt="post" />
+              <div class="post-likes">200 <span>♡</span></div>
+            </div>
+          </div>
+
+          <!-- Text Post Sample -->
+          <div class="text-post">
+            <div class="text-post-author">
+              <img src="https://i.pravatar.cc/60?img=5" alt="author" class="text-post-avatar" />
+              <span class="text-post-name">Sample</span>
+            </div>
+            <p class="text-post-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus aliquam velit ac mattis vestibulum scelerisque orci dui eget dignissim.</p>
+            <div class="text-post-actions">
+              <button>♡ Like</button>
+              <button>💬 Comment</button>
+              <button>↗ Share</button>
+            </div>
+          </div>
+
+          <!-- Extra posts for scrolling demo -->
+          <div class="text-post">
+            <div class="text-post-author">
+              <img src="https://i.pravatar.cc/60?img=12" alt="author" class="text-post-avatar" />
+              <span class="text-post-name">John Doe</span>
+            </div>
+            <p class="text-post-body">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit neque, auctor sit amet aliquam vel.</p>
+            <div class="text-post-actions">
+              <button>♡ Like</button>
+              <button>💬 Comment</button>
+              <button>↗ Share</button>
+            </div>
+          </div>
+
+          <div class="text-post">
+            <div class="text-post-author">
+              <img src="https://i.pravatar.cc/60?img=20" alt="author" class="text-post-avatar" />
+              <span class="text-post-name">Maria Santos</span>
+            </div>
+            <p class="text-post-body">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+            <div class="text-post-actions">
+              <button>♡ Like</button>
+              <button>💬 Comment</button>
+              <button>↗ Share</button>
+            </div>
+          </div>
+
+        </div><!-- end feed-scroll -->
+      </div><!-- end green-panel -->
+
+
+      <!-- ===================== RIGHT SIDEBAR ===================== -->
+      <aside class="right-panel">
+
+        <!-- Top Books Today -->
+        <div class="right-card">
+          <div class="right-card-header">
+            <h3>Top Books Today</h3>
+            <button class="dots-btn">•••</button>
+          </div>
+          <div class="book-list">
+            <div class="book-item">
+              <img src="https://picsum.photos/seed/bk1/50/50" alt="book" class="book-thumb" />
+              <div class="book-info">
+                <span class="book-title">Wandering Soul</span>
+                <span class="book-author">Helene Paquet</span>
+              </div>
+            </div>
+            <div class="book-item">
+              <img src="https://picsum.photos/seed/bk2/50/50" alt="book" class="book-thumb" />
+              <div class="book-info">
+                <span class="book-title">Golden Skies</span>
+                <span class="book-author">Hae-won Jeon</span>
+              </div>
+            </div>
+            <div class="book-item">
+              <img src="https://picsum.photos/seed/bk3/50/50" alt="book" class="book-thumb" />
+              <div class="book-info">
+                <span class="book-title">Drifting Away</span>
+                <span class="book-author">Chidi Eze</span>
+              </div>
+            </div>
+            <div class="book-item">
+              <img src="https://picsum.photos/seed/bk4/50/50" alt="book" class="book-thumb" />
+              <div class="book-info">
+                <span class="book-title">Broken Moments</span>
+                <span class="book-author">Chiaki Sato</span>
+              </div>
+            </div>
+            <div class="book-item">
+              <img src="https://picsum.photos/seed/bk5/50/50" alt="book" class="book-thumb" />
+              <div class="book-info">
+                <span class="book-title">Heartbeats</span>
+                <span class="book-author">Claudia Alves</span>
+              </div>
+            </div>
+            <div class="book-item">
+              <img src="https://picsum.photos/seed/bk6/50/50" alt="book" class="book-thumb" />
+              <div class="book-info">
+                <span class="book-title">Unspoken</span>
+                <span class="book-author">Lars Peeters</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trending Topics -->
+        <div class="right-card">
+          <div class="right-card-header">
+            <h3>Trending Topics</h3>
+            <button class="dots-btn">•••</button>
+          </div>
+          <div class="topic-list">
+            <div class="topic-item">
+              <img src="https://picsum.photos/seed/tp1/50/50" alt="topic" class="topic-thumb" />
+              <div class="topic-info">
+                <span class="topic-title">The Waves</span>
+                <span class="topic-sub">20 people are talking about this</span>
+              </div>
+            </div>
+            <div class="topic-item">
+              <img src="https://picsum.photos/seed/tp2/50/50" alt="topic" class="topic-thumb" />
+              <div class="topic-info">
+                <span class="topic-title">End of the Night</span>
+                <span class="topic-sub">New Release</span>
+              </div>
+            </div>
+            <div class="topic-item">
+              <img src="https://picsum.photos/seed/tp3/50/50" alt="topic" class="topic-thumb" />
+              <div class="topic-info">
+                <span class="topic-title">Between Us</span>
+                <span class="topic-sub">Popular in CEAT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </aside>
+      <!-- =================== END RIGHT PANEL =================== -->
+
+    </main>
+    <!-- =================== END MAIN =================== -->
+
+  </div><!-- end wrapper -->
+
+  <script src="UserDashboard.js"></script>
+</body>
+</html>
