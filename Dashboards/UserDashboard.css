@@ -1,6 +1,4 @@
-/* =========================================================
-   UD-cipher User Dashboard — UserDashboard.css
-   ========================================================= */
+/* UD-cipher User Dashboard — UserDashboard.css */
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -32,9 +30,7 @@ body {
   overflow: hidden;
 }
 
-/* =============================================
-   WRAPPER
-   ============================================= */
+/* WRAPPER */
 .wrapper {
   display: flex;
   height: 100vh;
@@ -42,9 +38,7 @@ body {
   position: relative;
 }
 
-/* =============================================
-   LEFT SIDEBAR
-   ============================================= */
+/* LEFT SIDEBAR */
 .sidebar {
   width: var(--sidebar-width);
   min-width: var(--sidebar-width);
@@ -203,9 +197,7 @@ body {
   box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
 
-/* =============================================
-   MAIN CONTENT
-   ============================================= */
+/* MAIN CONTENT */
 .main-content {
   flex: 1;
   display: flex;
@@ -224,9 +216,7 @@ body {
   z-index: 0;
 }
 
-/* =============================================
-   GREEN PANEL (fixed, content scrolls inside)
-   ============================================= */
+/* REEN PANEL (fixed, content scrolls inside) */
 .green-panel {
   flex: 1;
   height: 100vh;
@@ -409,7 +399,7 @@ body {
 .category-label {
   font-size: 14px;
   font-weight: 700;
-  color: #c8d870;
+  color: #7fab57;
 }
 
 .category-tags {
